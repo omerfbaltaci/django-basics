@@ -1,0 +1,93 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Basics Project</title>
+    <link href="{% static 'css/main.css' %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="container">
+
+        <br>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div id="profile-picture-wrapper" class="card card-body h-100">
+
+                    <img id="profile-picture" src="{% static 'images/me.jpeg' %}" alt="Profile Picture">
+                    <hr>
+                    <h4>Hello, I'm Omer Faruk!</h4>
+
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="card card-body h-100">
+
+                    <h4>I'm trying to learn Django from scratch!</h4>
+                    <hr>
+                    <p>In this project, i learned the structure of Django project, how to set url's, static file folder management, 
+                        template management and how to use bootstrap classes in Django templates.
+                    </p>
+
+                    <p>I also learned how to integrate bootstrap in a Django project and how to design a website with it.</p>
+                    
+                    <ul class="social-links">
+                        <li><img class="social" src="{% static 'images/github.png' %}" alt=""></li>
+                        <li><img class="social" src="{% static 'images/linkedin.png' %}" alt=""></li>
+                        <li><img class="social" src="{% static 'images/instagram.png' %}" alt=""></li>
+                        <li><img id="x" class="social" src="{% static 'images/x.png' %}" alt=""></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card card-body h-100">
+                    <h4>About Me</h4>
+                    <hr>
+                    <p>I am a Computer Engineering student with a strong passion for Machine Learning, Artificial Intelligence, and Web Development. My focus is on building intelligent systems that enhance efficiency and solve real-world problems.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card-body h-100">
+                    <h4>Experience</h4>
+                    <hr>
+                    <p>I have experience working as an AI Trainer, evaluating and improving large language models, and contributing to AI advancements in Turkish language processing. Additionally, I have developed projects involving supervised/unsupervised learning, object detection, and tracking.</p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card card-body h-100">
+                    <h4>Technical Skills</h4>
+                    <hr>
+                    <p>I am proficient in Python, JavaScript, and frameworks like React and Vue.js. My expertise extends to deep learning, computer vision, and data science, where I apply AI techniques to real-world applications, such as medical image classification and object tracking.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card-body h-100">
+                    <h4>Projects & Achivements</h4>
+                    <hr>
+                    <p>I have worked on projects like brain tumor classification using CNNs and vehicle tracking with YOLOv4. Additionally, I was selected as a scholar in Google’s AI & Technology Academy and participated in Acunmedya Academy’s C# and .NET program to expand my development skills.</p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+    </div>
+
+</body>
+</html>
